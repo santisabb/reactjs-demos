@@ -1,10 +1,12 @@
-export function RecordCard (){
-    <article className="record-card">
+// eslint-disable-next-line react/prop-types
+export function RecordCard ({ recordName, artistName }){
+    return (<article className="record-card">
     <header className="record-img">
         <img src="https://t2.genius.com/unsafe/375x0/https%3A%2F%2Fimages.genius.com%2F3e0b7eb6a0e5bc356a29a7ff10e4c833.1000x1000x1.jpg" alt="542" />
     </header>
     <div className="record-info">
-        <p>Artista: <strong>C.R.O</strong></p>
+        <strong>{recordName}</strong>
+        <p>Artista: <strong>{artistName}</strong></p>
         <p>TRACKLIST</p>
         <ol>
             <li>Keta</li>
@@ -12,7 +14,7 @@ export function RecordCard (){
             <li>Money</li>
             <li>Cuervos</li>
         </ol>
-        <p>Este nueva extended play de C.R.O producida por <strong>ORODEMBOW</strong> lanzada el 26 de Marzo de 2019 (un dia antes de que saliera Tumbando el club Remix)
+        <p>Este nuevo extended play(EP) de C.R.O, producida por <strong>ORODEMBOW</strong> y lanzada el 26 de Marzo de 2019 (un dia antes de que saliera Tumbando el club Remix)
         , nos trae un EP muy versatil y una colaboracion con Duki que es una de las mejores
         de esta dupla.
         </p>
@@ -31,5 +33,5 @@ export function RecordCard (){
 
         Like
     </button>
-</article>
+</article>)
 }
